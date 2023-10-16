@@ -16,12 +16,14 @@
 
 .navBarSection {
     background: var(--whiteColorDeam);
+    z-index: 2;
+    position: relative;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: .5rem 3rem;
     width: 100%;
 }
 
