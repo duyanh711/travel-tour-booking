@@ -14,6 +14,9 @@
 }
 
 
+.navBarSection {
+    margin: auto 1.5rem;
+}
 
 .header {
     display: flex;
@@ -48,4 +51,66 @@
 
 .signIn:hover {
     background: var(--PrimaryColor);
+}
+
+@media screen and (max-width: 768px) {
+    .logoDiv {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .toggleNavbar {
+        display: flex;
+        right: 20%;
+        position: relative;
+    }
+
+    .navBar {
+        position: absolute;
+        background-color: var(--whiteColorDeam);
+        height: max-content;
+        width: 60%;
+        border-radius: 1rem;
+        top: 6rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        transition: 0.3s ease-in-out;
+    }
+
+    .navLists {
+        flex-direction: column;
+        margin: 10px auto;
+        padding: 1rem;
+
+        .navItem {
+            padding: 0.5rem 0;
+            margin: .4rem;
+
+            .navLink {
+                color: var(--textColor);
+                font-size: .9rem;
+                font-weight: 600;
+            }
+
+            .signIn {
+                color: var(--whiteColor);
+            }
+        }
+    }
+
+    .closeNavbar {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .closeNavbar:hover {
+        color: var(--blackColor);
+    }
+
 }
