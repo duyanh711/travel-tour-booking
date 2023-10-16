@@ -1,0 +1,51 @@
+:root {
+    --backgroundColor: hsl(229, 100%, 50%);
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    background: var(--whiteColorDeam);
+}
+
+.logoDiv {
+    font-size: 25px;
+}
+
+.toggleNavbar {
+    display: none;
+}
+
+.closeNavbar {
+    display: none;
+}
+
+.navItem {
+    padding: 0.4rem;
+}
+
+.signIn {
+    background: var(--backgroundColor);
+    color: var(--whiteColor);
+    padding: 0.45rem;
+    border-radius: 3rem;
+}
+
+.signIn:hover {
+    background: var(--PrimaryColor);
+}
