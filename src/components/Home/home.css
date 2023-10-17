@@ -35,15 +35,59 @@
   height: 500px;
   position: absolute;
   color: var(--whiteColor);
-  left: 40px;
-  top: 200px;
+  left: 65px;
+  top: 150px;
+  align-items: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hometext-container h1 {
   font-size: 30px;
   font-weight: 600;
+  color: var(--blackColor);
+  padding: 10px;
 }
 
 .search-form {
   background: var(--formColor);
+  border-radius: 6px;
+  width: 70rem;
+  padding: 10px 25px 30px;
+  justify-content: space-between;
+}
+
+.input {
+  width: 20rem;
+  padding: 10px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    font-size: 14px;
+  }
+  .hometext-container {
+    left: 20px;
+  }
+  .hometext-container h1 {
+    padding: 0.3rem;
+  }
+  .search-form {
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+  }
+  .search-form .destinationInput {
+    margin-top: 15px;
+  }
+  .search-form .input {
+    padding: 10px 0;
+    width: 250px;
+  }
 }/*# sourceMappingURL=home.css.map */
