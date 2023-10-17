@@ -3,6 +3,9 @@ import './main.css'
 import image1 from '../../assets/hoi_an.png'
 import image2 from '../../assets/hue.jpg'
 import image3 from '../../assets/ninh_binh.jpg'
+import image4 from '../../assets/quang_binh.jpg'
+import image5 from '../../assets/sa_pa.jpg'
+import image6 from '../../assets/vung_tau.jpg'
 
 const Main = () => {
     const destinations = [
@@ -10,7 +13,7 @@ const Main = () => {
             title: 'Hoi An',
             id: 1,
             src: image1,
-            desc: 'As an ancient city that sits along Thu Bon River, Hoi An impresses travellers with its unique architectural ensemble that features iconic yellow houses and rich traditional heritage,'
+            desc: 'As an ancient city that sits along Thu Bon River, Hoi An impresses travellers with its unique architectural ensemble that features iconic yellow houses and rich traditional heritage.'
         },
         {
             title: 'Hue',
@@ -24,7 +27,28 @@ const Main = () => {
             src: image3,
             desc: 'Ninh Binh has become familiar to international tourists after its majestic landscape was chosen as the backdrop for the Hollywood blockbuster “Kong: Skull Island”.'
 
-        }
+        },
+        {
+            title: 'Quang Binh',
+            id: 4,
+            src: image4,
+            desc: 'Thanks to the discovery of Son Doong - the worlds largest cave here, Dong Hoi is no longer a little-known place. Exploring the magnificent Son Doong Cave and seeing first-hand the magical moment when the sun shines through the caves sinkhole is guaranteed to be an incredible experience in Dong Hoi.'
+
+        },
+        {
+            title: 'Sa Pa',
+            id: 5,
+            src: image5,
+            desc: 'Sa Pa captivates thousands of visitors with its stunning views from the top of Fansipan mountain, picturesque ethnic villages and breathtaking terraced fields.'
+
+        },
+        {
+            title: 'Vung Tau',
+            id: 6,
+            src: image6,
+            desc: 'The tourist attraction of this place is the beautiful unspoiled natural landscape endowed with clear blue coastline and rich coral reefs, blended with a calm, peaceful atmosphere and cultural and historical imprints all over the island.'
+
+        },
     ]
     return (
         <section className='main'>

@@ -14,17 +14,18 @@
 }
 
 
-.navBarSection {
-    z-index: 2;
-    position: relative;
-}
+
 
 .header {
+    background-color: var(--whiteColorDeam);
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: .5rem 3rem;
     width: 100%;
-    position: absolute;
+    z-index: 10;
+
+
 }
 
 .logoDiv {

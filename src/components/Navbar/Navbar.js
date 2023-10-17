@@ -16,34 +16,36 @@ const Navbar = () => {
 
     return (
         <section className='navBarSection'>
-            <header className='header flex'>
-                <div className='logoDiv'>
-                    <a href='#' className='logo'>
-                        <h1><MdOutlineTravelExplore className='logo'></MdOutlineTravelExplore>Travel</h1>
-                    </a>
-                </div>
-                <div className={active}>
-                    <ul className='navLists flex'>
-                        <li className='navItem'>
-                            <a href='#' className='navLink'>Home</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href='#' className='navLink'>Sign Up</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href='#' className='navLink signIn'>Sign In</a>
-                        </li>
-                    </ul>
-                    <div className='closeNavbar'>
-                        <AiFillCloseCircle onClick={closeNav} className="icon" />
+            <div className='navbarWrapper'>
+                <header className='header flex'>
+                    <div className='logoDiv'>
+                        <a href='#' className='logo'>
+                            <h1><MdOutlineTravelExplore className='logo'></MdOutlineTravelExplore>Travel</h1>
+                        </a>
+                    </div>
+                    <div className={active}>
+                        <ul className='navLists flex'>
+                            <li className='navItem'>
+                                <a href='#' className='navLink'>Home</a>
+                            </li>
+                            <li className='navItem'>
+                                <a href='#' className='navLink'>Sign Up</a>
+                            </li>
+                            <li className='navItem'>
+                                <a href='#' className='navLink signIn'>Sign In</a>
+                            </li>
+                        </ul>
+                        <div className='closeNavbar'>
+                            <AiFillCloseCircle onClick={closeNav} className="icon" />
+
+                        </div>
 
                     </div>
-
-                </div>
-                <div className='toggleNavbar'>
-                    <TbGridDots onClick={showNav} className="icon"></TbGridDots>
-                </div>
-            </header>
+                    <div className='toggleNavbar'>
+                        <TbGridDots onClick={showNav} className="icon"></TbGridDots>
+                    </div>
+                </header>
+            </div>
         </section>
     )
 }
