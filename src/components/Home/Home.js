@@ -36,6 +36,9 @@ const Home = () => {
                                 min="1000" />
                         </div>
                     </div>
+                    <div className='searchBtn'>
+                        <button className='btn'>Search</button>
+                    </div>
                 </form>
             </div>
 

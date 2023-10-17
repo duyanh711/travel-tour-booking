@@ -1,1 +1,87 @@
-/*# sourceMappingURL=main.css.map */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(200, 26%, 7%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --formColor: hsl(231, 90%, 24%);
+}
+
+.destination-detail {
+  width: 400px;
+  min-height: 250px;
+  vertical-align: top;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px 0;
+  background: var(--cardBG);
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+}
+.destination-detail:hover {
+  background: #202020;
+}
+.destination-detail:hover .des-img {
+  opacity: 0.1;
+  transition: opacity 0.2s ease;
+}
+.destination-detail:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.des-img {
+  padding: 10px;
+  width: 350px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.description {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-wrapper {
+    margin: 3rem;
+  }
+  .destination-detail {
+    margin-right: 20px;
+  }
+  .destination-detail:nth-child(3) {
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .detail-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+  }
+  .description {
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
