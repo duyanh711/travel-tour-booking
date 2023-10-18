@@ -13,6 +13,11 @@
   --formColor: hsl(231, 90%, 24%);
 }
 
+.detail-container {
+  position: relative;
+  align-items: center;
+}
+
 .destination-detail {
   width: 400px;
   min-height: 250px;

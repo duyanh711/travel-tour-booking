@@ -1,8 +1,15 @@
 .footer {
-  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.contain {
+  width: 80%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  background: #211a83;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 10px 0 50px;
 }
 
 .footer .col {

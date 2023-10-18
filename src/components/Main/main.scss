@@ -13,7 +13,11 @@
     --formColor: hsl(231, 90%, 24%);
 }
 
+.detail-container {
+    position: relative;
+    align-items: center;
 
+}
 
 
 .destination-detail {
@@ -53,6 +57,8 @@
 
 
 }
+
+
 
 .des-img {
     padding: 10px;
