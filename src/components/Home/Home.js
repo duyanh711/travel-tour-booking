@@ -11,7 +11,7 @@ const Home = () => {
             <div className='hometext-container'>
 
                 <h1 className='homeTitle'>
-                    Search your Holiday
+                    Search your Destination
                 </h1>
                 <form className='search-form flex'>
                     <div className='destinationInput'>
