@@ -1,8 +1,8 @@
 import React from 'react'
-import './home.css'
+import './search.css'
 import homeImage from '../../assets/home-image.png'
 
-const Home = () => {
+const Search = () => {
     return (
         <section className='home'>
             <div className='overlay'></div>
@@ -46,4 +46,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Search

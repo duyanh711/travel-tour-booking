@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 import { MdOutlineTravelExplore } from 'react-icons/md'
 import { TbGridDots } from "react-icons/tb"
 import { AiFillCloseCircle } from "react-icons/ai"
@@ -18,22 +19,32 @@ const Navbar = () => {
         <section className='navBarSection'>
             <div className='navbarWrapper'>
                 <header className='header flex'>
-                    <div className='logoDiv'>
-                        <a href='#' className='logo'>
-                            <h1><MdOutlineTravelExplore className='logo'></MdOutlineTravelExplore>Travel</h1>
-                        </a>
-                    </div>
+
+                    <Link to="/">
+                        <div className='logoDiv'>
+                            <div className='logo'>
+                                <h1><MdOutlineTravelExplore className='logo'></MdOutlineTravelExplore>Travel</h1>
+                            </div>
+                        </div>
+                    </Link>
+
                     <div className={active}>
                         <ul className='navLists flex'>
-                            <li className='navItem'>
-                                <a href='#' className='navLink'>Home</a>
-                            </li>
-                            <li className='navItem'>
-                                <a href='#' className='navLink'>Sign Up</a>
-                            </li>
-                            <li className='navItem'>
-                                <a href='#' className='navLink signIn'>Sign In</a>
-                            </li>
+                            <Link to="/">
+                                <li className='navItem'>
+                                    <p className='navLink'>Home</p>
+                                </li>
+                            </Link>
+                            <Link to="/signup">
+                                <li className='navItem'>
+                                    <p className='navLink'>Sign Up</p>
+                                </li>
+                            </Link>
+                            <Link to="/login">
+                                <li className='navItem'>
+                                    <p className='navLink signIn'>Sign In</p>
+                                </li>
+                            </Link>
                         </ul>
                         <div className='closeNavbar'>
                             <AiFillCloseCircle onClick={closeNav} className="icon" />
@@ -47,6 +58,7 @@ const Navbar = () => {
                 </header>
             </div>
         </section>
+
     )
 }
 
