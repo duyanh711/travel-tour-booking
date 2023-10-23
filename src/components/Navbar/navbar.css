@@ -53,15 +53,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
   .logoDiv {
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
   .toggleNavbar {
     display: flex;
-    right: 20%;
+    left: 10%;
     position: relative;
   }
   .navBar {

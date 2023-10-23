@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { MdOutlineTravelExplore } from 'react-icons/md'
 import { TbGridDots } from "react-icons/tb"
 import { AiFillCloseCircle } from "react-icons/ai"
-import Home from '../../pages/Home'
-import Login from '../../pages/Login'
-import SignUp from '../../pages/SignUp'
 
 const Navbar = () => {
     const [active, setActive] = useState('navBar')
