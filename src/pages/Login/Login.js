@@ -29,35 +29,32 @@ function Login() {
         <div className='login-container'>
             <img className='bg-img' src={homeImg} />
             <div className='login-wrapper'>
-                <div className=''>
-                    <div className=''>
-                        <div className=''>
-                            <h1 className='login-text'>Sign In</h1>
-                            <form onSubmit={handleSubmit}
-                                className='login-form'>
-                                <input
-                                    onInput={() => setError('')}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className='email' type='email' placeholder='Email' />
-                                <input
-                                    onInput={() => setError('')}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    className='pw' type='password' placeholder='Password' />
-                                <button className=''>Sign In</button>
-                                <div className='login-more'>
-                                    <p className=''><input className='remember' type='checkbox' />Remember me</p>
-                                    <p className='support'>Need help?</p>
-                                </div>
-                                <p className=''>New Booking's account?<span className=''>
-                                    <Link to='/signup'> Sign Up</Link></span> </p>
-                            </form>
-                        </div>
+                <h1 className='login-text'>Sign In</h1>
+                <form onSubmit={handleSubmit}
+                    className='login-form'>
+                    <input
+                        onInput={() => setError('')}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className='email' type='email' placeholder='Email' />
+                    <input
+                        onInput={() => setError('')}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className='pw' type='password' placeholder='Password' />
+                    <button className=''>Sign In</button>
+                    <div className='login-more'>
+                        <p className='remember'>Remember me<span><input className='checkbox' type='checkbox' /></span></p>
+                        <p className='support'>Need help?</p>
                     </div>
-                </div>
-
+                    <p className='signup-link'>New Booking's account?<span className=''>
+                        <Link to='/signup'> Sign Up</Link></span> </p>
+                </form>
             </div>
-
         </div>
+
+
+
+
+
     )
 }
 
